@@ -1,4 +1,5 @@
 import { testStep, expect } from '../../common/helpers/pw';
+import { BaseHeader } from '../components/header/BaseHeader';
 
 export class BasePage {
   _url;
@@ -6,6 +7,7 @@ export class BasePage {
   constructor(page, userId = 0) {
     this.page = page;
     this.userId = userId;
+    this.header = new BaseHeader(this.page, userId);
   }
 
   async step(title, stepToRun) {

@@ -7,7 +7,7 @@ export class InternalHeader extends BaseHeader {
   constructor(page, userId = 0) {
     super(page, userId);
     this.#newArticleLink = this.page.getByRole('link', { name: 'New Article' });
-    this.#settingsLink = this.page.getByRole('link', { name: 'Sign in' });
+    this.#settingsLink = this.page.getByRole('link', { name: 'Settings' });
   }
 
   #profileLink(profileId) {
