@@ -1,5 +1,5 @@
 import { BaseComponent } from './BaseComponent';
-import { expect } from 'allure-playwright';
+import { expect } from '../../common/helpers/pw';
 
 export class PopularTags extends BaseComponent {
   #tagList;
